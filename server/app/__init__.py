@@ -19,7 +19,7 @@ from .routes.category_routes import create_category, get_categories, get_categor
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
-    CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "http://localhost:5173"}})
+    CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "http://localhost:5174"}})
 
     db.init_app(app)
     login_manager.init_app(app)
